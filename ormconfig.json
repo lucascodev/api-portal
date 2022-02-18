@@ -1,0 +1,18 @@
+{
+    "type": "oracle",
+    "host": "10.0.10.203",
+    "port": 1521,
+    "username": "mega",
+    "password": "megamega",
+    "sid": "MEGA",
+    "database": "MEGA",
+    "synchronize": false,
+    "logging": false,
+    "entities": ["dist/**/*.entity.js"],
+    "migrations": ["dist/migrations/**/*.js"],
+    "cli": {
+        "entitiesDir": "dist/**/*.model.js",
+        "migrationsDir": "src/migrations",
+        "subscribersDir": "src/subscriber"
+    }
+}
