@@ -1,7 +1,7 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'MAN_CAD_ORDEM_SERVICOS' })
+@Entity({ name: 'man_cad_ordem_services' })
 export class ChamadoEntity {
   @PrimaryGeneratedColumn()
   @ApiProperty()
@@ -28,8 +28,8 @@ export class ChamadoEntity {
   man_sector: string;
 
   @Column('varchar')
-  @ApiProperty()
-  man_attendat: string;
+  @ApiPropertyOptional()
+  man_attendant: string;
 
   @Column('varchar')
   @ApiProperty()

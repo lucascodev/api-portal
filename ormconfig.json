@@ -8,10 +8,10 @@
     "database": "chamados",
     "synchronize": false,
     "logging": false,
-    "entities": ["dist/**/*.entity.js"],
-    "migrations": ["dist/migrations/**/*.js"],
+    "entities": ["dist/**/entity/*.entity.js"],
+    "migrations": ["src/migrations/**/*.js"],
     "cli": {
-        "entitiesDir": "dist/**/*.model.js",
+        "entitiesDir": "src/**/*.model.js",
         "migrationsDir": "src/migrations",
         "subscribersDir": "src/subscriber"
     }

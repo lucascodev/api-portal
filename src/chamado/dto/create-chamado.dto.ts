@@ -18,7 +18,7 @@ export class CreateChamadoDto {
 
   @IsNotEmpty()
   @ApiProperty()
-  man_solicitante: string;
+  man_requester: string;
 
   @IsNotEmpty()
   @ApiProperty()
