@@ -2,65 +2,65 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsIn, IsNotEmpty } from 'class-validator';
 
 export class CreateChamadoDto {
-  MAN_ID: number;
+  man_id: number;
   @IsNotEmpty()
   @ApiProperty()
-  MAN_TITULO: string;
+  man_title: string;
 
   @IsNotEmpty()
   @IsIn([0, 1, 2])
   @ApiProperty()
-  MAN_NIVEL: number;
+  man_nivel: number;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_STATUS: string;
+  man_status: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_SOLICITANTE: string;
+  man_solicitante: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_SETOR: string;
+  man_sector: string;
 
-  MAN_ATENDENTE: string;
-
-  @IsNotEmpty()
-  @ApiProperty()
-  MAN_NOME_OPERADOR: string;
+  man_attendant: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_TIPO_SERVICO: string;
+  man_name_operator: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_COD_MAQUINA: number;
+  man_service_type: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_DESCRICAO: string;
+  man_cod_machine: number;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_OBSERVACAO: string;
+  man_description: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_GRUPO: string;
+  man_observation: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_DATA_ABERTURA: string;
+  man_group: string;
 
   @IsNotEmpty()
   @ApiProperty()
-  MAN_USER_ID: number;
+  man_date_opening: string;
 
-  MAN_USER_DEL: string;
+  @IsNotEmpty()
+  @ApiProperty()
+  man_user_id: number;
 
-  MAN_DATA_DEL: string;
+  man_user_del: string;
 
-  MAN_DELETE: string;
+  man_date_del: string;
+
+  man_delete: string;
 }

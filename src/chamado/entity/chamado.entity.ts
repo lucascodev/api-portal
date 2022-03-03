@@ -5,73 +5,73 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export class ChamadoEntity {
   @PrimaryGeneratedColumn()
   @ApiProperty()
-  MAN_ID: number;
+  man_id: number;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_TITULO: string;
+  man_title: string;
 
-  @Column('number')
+  @Column('numeric')
   @ApiProperty()
-  MAN_NIVEL: number;
+  man_nivel: number;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_STATUS: string;
+  man_status: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_SOLICITANTE: string;
+  man_requester: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_SETOR: string;
+  man_sector: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_ATENDENTE: string;
+  man_attendat: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_NOME_OPERADOR: string;
+  man_name_operator: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_TIPO_SERVICO: string;
+  man_service_type: string;
 
-  @Column('number')
+  @Column('numeric')
   @ApiProperty()
-  MAN_COD_MAQUINA: number;
+  man_cod_machine: number;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_DESCRICAO: string;
+  man_description: string;
 
-  @Column('clob')
+  @Column('text')
   @ApiProperty()
-  MAN_OBSERVACAO: string;
+  man_observation: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_GRUPO: string;
+  man_group: string;
 
   @Column('timestamp')
   @ApiProperty()
-  MAN_DATA_ABERTURA: string;
+  man_date_opening: string;
 
-  @Column('number')
+  @Column('numeric')
   @ApiProperty()
-  MAN_USER_ID: number;
+  man_user_id: number;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_USER_DEL: string;
+  man_user_del: string;
 
   @Column('date')
   @ApiProperty()
-  MAN_DATA_DEL: string;
+  man_date_del: string;
 
-  @Column('varchar2')
+  @Column('varchar')
   @ApiProperty()
-  MAN_DELETE: string;
+  man_delete: string;
 }
